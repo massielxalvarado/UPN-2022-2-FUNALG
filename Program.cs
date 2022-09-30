@@ -1,18 +1,16 @@
-﻿int f, c;
-string n;
+﻿int num1, num2, suma = 0;
 
-Console.Write("Ingrese numero de filas: ");
-f = int.Parse(Console.ReadLine());
-Console.Write("Ingrese numero de columnas: ");
-c = int.Parse(Console.ReadLine());
-Console.Write("Ingrese el numero a mostar: ");
-n = (Console.ReadLine());
+Console.WriteLine("INGRESE EL PRIMER NUMERO ");
 
-for (int i = 0; i < c; i++)
+num1 = int.Parse(Console.ReadLine());
+Console.WriteLine("INGRESE EL SEGUNDO NUMERO");
+
+num2 = int.Parse(Console.ReadLine());
+
+for (int i = num1; i <= num2; i++)
 {
-    for (int j = 0; j < f; j++)
-    {
-        Console.Write("" + n + "");
-    }
-    Console.Write("\n");
+    suma = suma + i;
 }
+
+Console.WriteLine("LA SUMA COMPENDIDOS ENTRE ESTOS DOS NUMEROS ES: : " + suma);
+Console.ReadKey();
